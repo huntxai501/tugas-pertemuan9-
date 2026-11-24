@@ -1,0 +1,22 @@
+const nama = "Budi Santoso";
+let gajiPokok = 5000000;
+let tunjangan = 1000000;
+let bonus = 500000;
+
+const hitungGaji = (gajiPokok, tunjangan, bonus) => {
+    let totalPendapatan = gajiPokok + tunjangan + bonus;
+    let potongan = totalPendapatan * 5 / 100;
+    let gajiBersih = totalPendapatan - potongan;
+
+    return `
+    Nama Karyawan: ${nama}
+    Gaji Pokok: Rp${gajiPokok}
+    Tunjangan: Rp${tunjangan}
+    Bonus: Rp${bonus}
+    Total Pendapatan: Rp${totalPendapatan}
+    Potongan (5%): Rp${potongan}
+    Gaji Bersih: Rp${gajiBersih}
+    `;
+};
+
+console.log(hitungGaji(gajiPokok, tunjangan, bonus));
