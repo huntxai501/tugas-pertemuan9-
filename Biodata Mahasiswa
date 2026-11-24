@@ -1,0 +1,13 @@
+const tampilkanBiodata = (nama, nim, prodi, semester) => {
+    return `Nama: ${nama}
+NIM: ${nim}
+Program Studi: ${prodi}
+Semester: ${semester}`;
+};
+
+console.log(tampilkanBiodata(
+    "Andi Pratama",
+    "2026001",
+    "Teknik Rekayasa Multimedia",
+    3
+));
